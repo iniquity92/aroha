@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>About | Aroha</title>
+        <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="static/css/custom/fonts.css">
+        <link rel="stylesheet" type="text/css" href="static/css/custom/aroha.css">
+        
+    </head>
+    <body>
+        <div class="site-wrapper">
+            <nav class="navbar navbar-fixed-top navbar-default"><!-- navigation starts -->
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" 
+                            data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">Brand</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                            <ul class="navbar navbar-nav navbar-right">
+                                <li class="active"><a href="#home">HOME</a></li>
+                                <li><a href="#about">ABOUT US</a></li>
+                                <li><a href="#gallery">GALLERY</a></li>
+                                <li><a href="#blog">BLOG</a></li>
+                                <li><a href="#contact">CONTACT US</a></li>
+                            </ul>
+                        </div>
+                    </div>    
+                </nav>    <!-- navigation ends -->
+                <div id="about" class="about-about">
+                    <div id="about-header">
+                        <h1 class="header1">About</h1>
+                        <hr>
+                    </div>
+                    <div id="tabs">
+                        <ul id="about-tabs">
+                            <li class="active-list header4" id="tour">Tour</li>
+                            <li class="header4" id="team">Team</li>
+                        </ul>
+                        <div id="tab1" class="active-tab article">
+                            <p>You can see the result in Figure 13-11. Both example elements are
+                                rotated around the y-axis so they are facing away from you. The example on
+                                the left shows the element with a value of visible on the backface-visibility
+                                property, so you can clearly see the back of the element. In the example on
+                                the right, you can see . . . well . . . nothing. The backface-visibility property
+                                has a value of hidden, so nothing is displayed—no border, no background-color,
+                                nothing. To confirm that the element is actually there, visit the website that
+                                accompanies this book and take a look at the animated code examples so
+                                you can better see how they work.
+                            </p>
+                        </div>
+                        <div id="tab2" class="invisible-tab article">
+                            <p>The state value is one of two keywords: hidden or visible. The default
+                                is visible, which behaves in the way I just described; the alternative, hidden,
+                                shows nothing. These work in the same way as the visibility property,
+                                which you should be familiar with from CSS2.
+                                The following is a quick example illustrating the difference between
+                                the two states by showing two elements that are identical except for their
+                                backface-visibility values. Here’s the code:
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+        </div>
+
+        <script src="static/js/jquery.js"></script>
+        <script src="static/js/bootstrap.js"></script>
+        <script>
+            $("#tour,#team").on("click",function(e){
+                var caller = e.target.id;
+                var to_show;
+                switch(caller){
+                    case "tour":
+                    to_show = "#tab1";
+                    break;
+                    case "team":
+                    to_show = "#tab2";
+                    break;
+                }
+                var hide_tab = $("div.active-tab")[0]['id'];
+                var hide_li = $("li.active-list")[0]['id'];
+                $("#"+hide_tab).removeClass("active-tab");
+                $("#"+hide_tab).addClass("invisible-tab");
+                $(to_show).removeClass("invisible-tab")
+                $(to_show).addClass("active-tab");
+                $("#"+hide_li).removeClass("active-list");
+                $("#"+caller).addClass("active-list");
+            });
+        </script>
+    </body>
+</html>
