@@ -1,0 +1,495 @@
+
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+
+}
+body{
+    padding-bottom: 0px;
+}
+ @keyframes fold{
+    0%{
+        transform:rotateX(30deg);
+        transform-origin:top;
+        perspective: -130px;
+    }
+    100%{
+        height:0px;
+    }
+}
+@keyframes unfold{
+    0%{
+        height:0px;
+        transform:rotateX(-30deg);
+        transform-origin:top;
+    }
+    100%{
+        height:auto;
+    }
+}
+#glimpses{
+    text-align: center;
+}
+.img-responsive{
+    display: inline-block;
+}
+#about{
+    text-align: center;
+    padding-top:45px;    
+}
+.about-index{
+    margin-top:-20px;
+
+}
+.about-about{
+    margin-top: 51px;
+}
+#about-header > hr{
+    width: 170px;
+    border-width: 3px;
+    margin-top: -8px;
+}
+#about > h1{
+    font-weight: bold;
+}
+.accordion{
+    margin-bottom:13px;
+}
+.accordion-head{
+    background-color: silver;
+    width: 100%;
+    padding:15px;
+    text-align: center;
+}
+.accordion-body{
+    display: flex;
+    display: -webkit-flex;
+    /*display: block;
+    height: 450px;*/
+    width: 100%;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 5px;
+}
+.images{
+    position: relative;
+    /*border: 1px solid black;*/
+    height: 200px;
+    width:267px;
+    margin-top:25px;
+    /*margin-left: 135px;*/
+    background-position: center;
+    background-size: cover;
+}
+#adventure{
+    background-image: url('../../img/adventure/skiing.jpg');
+}
+#wildlife{
+    background-image: url('../../img/wildlife/seals.jpg');
+}
+#hobbiton{
+    background-image:url('../../img/hobbit/hobbit-house.jpg');
+}
+#fine-living{
+    background-image: url('../../img/fine/capella.jpg');
+}
+#beaches{
+    background-image: url('../../img/beaches/beache.jpg');
+}
+#nature{
+    background-image: url('../../img/trails/brook2.jpg');
+}
+
+.overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width:100%;
+    height:100%;
+    background-color: #000;
+    opacity: 0.4;
+    display: none;
+}
+.overlay-text{
+    position: absolute;
+    color:#fff;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 14px;
+    z-index:10;
+    line-height: 100px;
+    display: none;
+}
+.btn-activities{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.images:hover > .overlay{
+    display: inline-block;
+}
+.images:hover > .overlay-text{
+    display: inline-block;
+}
+.btn-activities:hover{
+    color: #ff6743;
+    border: 1px solid #ff6743;
+}
+.btn-activities:focus{
+    color: #fff;
+    border: 1px solid #fff;
+}
+.tags{
+    color:#3f3f3f;
+    background-color:#efefef;
+    margin:15px;
+    /*Change font type*/
+}
+.tags-large{
+    font-size: xx-large;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.tags-medium{
+    font-size: large;
+    padding: 10px;
+}
+.tags-small{
+    font-size: small;
+    padding: 15px;
+}
+.tags:hover{
+    background-color: #dedede;
+    cursor: pointer;
+}
+
+#glimpses{
+    padding-bottom:50px;
+}
+.collapse-accordion{
+    overflow:hidden;
+    animation-name:fold;
+    animation-duration:1.6s;
+    animation-timing-function:ease-out;
+    /* animation-iteration-count:1;*/
+    animation-fill-mode: forwards;
+    border-width:0px;   
+}
+.restore-accordion{
+    overflow:hidden;
+    animation-name:unfold;
+    animation-duration:0.6s;
+    animation-timing-function:ease-in;
+    /* animation-iteration-count:1;*/
+    animation-fill-mode: forwards;
+}
+.contact{
+    display: flex;
+    display: -webkit-flex;
+    background-color:#6f6f6f;
+    text-align: center;
+    color:#fff;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+#place-number-email{
+    display: flex;
+    display: -webkit-flex;
+    width: 62%;
+    /*border: 1px solid white;*/
+    justify-content: space-around;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+#communication{
+    display: flex;
+    display: -webkit-flex;
+    width: 44%;
+    /*border: 1px solid white;*/
+    justify-content: center;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+#communication input{
+    width:500px;
+}
+.btn-msg,.btn-msg:focus{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.btn-msg:hover{
+    border: 1px solid sandybrown;
+    color: sandybrown;
+}
+.contact-item{
+    margin-top: 5px;
+}
+#contact{
+    text-align: center;
+}
+#contact > h1{
+    font-weight: bold;
+}
+#social{
+    display: block;
+    width: 62%;
+    margin-top: 10px;
+    padding-bottom: 80px;
+}
+#social > div{
+    margin-left: 100px;
+}
+.social{
+    height: 35px;
+    width: 35px;
+    float: left;
+    margin-left: 50px;
+
+    /*border: 1px solid black;*/
+}
+
+.social > img{
+    height: 35px;
+}
+
+/*******************styles for the tabs in the about section*********************************/
+#tabs{
+    position: relative;
+    height: 500px;
+    width: 67%;
+    margin: auto;
+}
+ul#about-tabs{
+    list-style:none;
+}
+ul#about-tabs > li{
+    float:left;
+    border:1px solid black;
+    padding:15px;
+    width: 135px;
+    text-align: center;
+    background-color:crimson;
+}
+ul#about-tabs > li:hover{
+    background-color:rgba(60,0,0,0.8);
+    cursor:pointer;
+}
+ul#about-tabs > li.active-list{
+    background-color: salmon;
+}
+
+#tab1,#tab2,#tab3{
+    width:91%;
+    /*border:1px solid black; */
+    height: 312px;
+    position:absolute;
+    top:83px;
+    left:40px;
+    padding-top:25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+    box-shadow: 5px 11px 19px -6px;
+}
+.active-tab{
+    display:block;
+}
+.invisible-tab{
+    display:none;
+}
+/***************************************************************************/
+
+@media only screen and (min-width:320px){
+    #navigation{
+        background-color: #443ecf;
+        height: 51px;
+        
+    }
+    ul.navbar-nav{
+        list-style: none;
+    }
+    ul.navbar-nav > li{
+        margin:7.5px auto;
+        text-align: center;
+    }
+    
+   .accordion-body{
+       padding-bottom: 0px;
+   }
+   #communication{
+       width: 100%;
+   }
+   #communication input{
+       width: 290px;
+   }
+   #social > div{
+       margin-left: 1px;
+   }
+   .social{
+       margin-left: 10px;
+   }
+}
+@media only screen and (min-width:360px){
+    #carousel{
+        height: 225px;
+    }
+    #social > div{
+       margin-left: 15px;
+   }
+}
+@media only screen and (min-width:375px){
+    #carousel{
+        height:234px;
+    }
+    #social > div{
+       margin-left: 19px;
+   }
+}
+@media only screen and (min-width:412px){
+   #social > div{
+       margin-left: 29px;
+   }
+
+}
+@media only screen and (min-width:414px){
+    #carousel{
+        height: 259px;
+    }
+    #communication input{
+       width: 320px;
+   }
+   #social > div{
+       margin-left: 29px;
+   }
+
+}
+@media only screen and (min-width:480px){
+    ul.navbar-nav > li{
+        float: left;
+        margin-left: 15px;
+    }
+    #carousel{
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width:520px){
+    #communication{
+        width: 81%;
+    }
+    #social > div{
+       margin-left: 88px;
+   }
+   .social{
+       margin-left: 10px;
+   }
+}
+@media only screen and (min-width:545px){
+    ul.navbar{
+        margin-left: 8px;
+    }
+    #carousel{
+        height: 341px;
+    }
+}
+@media only screen and (min-width:600px){
+    ul.navbar{
+        margin-left: 36px;
+    }
+    #carousel{
+        height: 375px;
+    }
+}
+@media only screen and (min-width:640px){
+    ul.navbar{
+        margin-left: 55px;
+    }
+    #carousel{
+        height: 400px;
+    }
+    #communication{
+        width: 60%;
+    }
+}
+@media only screen and (min-width:720px){
+    ul.navbar{
+        margin-left: 120px;
+    }
+    #carousel{
+        height: 450px;
+    }
+    .accordion-body{
+        padding-bottom: 0px;
+    }
+    #communication input{
+       width: 360px;
+   }
+}
+@media only screen and (min-width:768px){
+    ul.navbar-nav{
+        padding: 5px;
+        margin-right: 15px;   
+    }
+    #carousel{
+        height: 480px;
+    }
+    #social > div{
+       margin-left: 128px;
+   }
+   .social{
+       margin-left: 15px;
+   }
+   .navbar > li > a{
+       padding-right: 18px;
+       padding-left: 18px;
+       padding-bottom: 19px;
+   }
+}
+@media only screen and (min-width:800px){
+    #social > div{
+       margin-left: 165px;
+   }
+   .social{
+       margin-left: 15px;
+   }
+}
+@media only screen and (min-width:980px){
+    .accordion-body{
+        width: 73%;
+        margin:auto;
+        padding-bottom: 5px;
+    }
+    #communication{
+        width: 55%;
+    }
+    #communication input{
+       width: 500px;
+   }
+    
+}
+@media only screen and (min-width:1200px){
+    #communication{
+        width: 44%;
+    }
+    #social > div{
+       margin-left: 312px;
+   }
+   .social{
+       margin-left: 15px;
+   }
+}
+

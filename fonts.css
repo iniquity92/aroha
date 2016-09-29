@@ -1,0 +1,31 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway:400,700';
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+
+.header1,.header2,.header3,.header4,.header5,.header6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.header1{
+    font-size: 72px;
+}
+.header2{
+    font-size:64px;
+}
+.header3{
+    font-size: 48px;
+}
+.header4{
+    font-size: 36px;
+}
+.header5{
+    font-size: 28px;
+}
+.header6{
+    font-size: 26px;
+}
+
+.article{
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+}
