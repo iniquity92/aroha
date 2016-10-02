@@ -1,0 +1,112 @@
+<!-- Start News Display Template -->
+{* This section shows a clickable list of your News categories. *}
+<div class="cat-list">
+<ul class="list1">
+{foreach from=$cats item=node}
+{if $node.depth > $node.prevdepth}
+{repeat string="<ul>" times=$node.depth-$node.prevdepth}
+{elseif $node.depth < $node.prevdepth}
+{repeat string="</li></ul>" times=$node.prevdepth-$node.depth}
+</li>
+{elseif $node.index > 0}</li>
+{/if}
+<li{if $node.index==0} class="firstcat"{/if}>
+{if $node.count > 0}
+	<a href="{$node.url}">{$node.news_category_name}</a>{else}<span>{$node.news_category_name} </span>{/if}
+{/foreach}
+{repeat string="</li></ul>" times=$node.depth-1}</li>
+</ul>
+</div>
+
+{* this displays the category name if you're browsing by category *}
+{if $category_name}
+<h1>{$category_name}</h1>
+{/if}
+
+{* if you don't want category browsing on your summary page, remove this line and everything above it *}
+
+<!-- news summary begin -->
+{foreach from=$items item=entry}
+    <div class="news-summary">
+
+        {if $entry->postdate}
+            <div class="date">
+                <time datetime='{$entry->postdate|cms_date_format:"%Y-%m-%d"}'>
+                    <div class="date-date">
+                        {$entry->postdate|cms_date_format:"%d"}
+                    </div>
+                    <div class="date-month">
+                        {$entry->postdate|cms_date_format:"%b"}
+                    </div>
+                </time>    
+            </div>
+        {/if}
+
+        <div class="article">
+            <div class="news-header">
+                <a href="{$entry->moreurl}" title="{$entry->title|cms_escape:htmlall}">{$entry->title|cms_escape}</a>
+            </div>
+            <div class="summary-meta">
+             {$category_label}
+            <span class="category">
+                {$entry->category}
+            </span>
+
+            {if $entry->author}
+                {$author_label} 
+                <span class="author">
+                    {$entry->author}
+                </span>
+            {/if}
+            </div>
+
+            {if $entry->summary}
+                <div class="summary">
+                    {$entry->summary} <span class="summary-more"> {$entry->morelink}</span>
+                </div>
+
+            {else if $entry->content}
+
+                <div class="content">
+                    <p>{$entry->content|strip_tags}</p><span class="summary-more"> {$entry->morelink}</span>
+                </div>
+            {/if}
+        </div>
+        <!-- End News summary -->
+        <!-- {if isset($entry->extra)}
+            <div class="NewsSummaryExtra">
+                {$entry->extra}
+            {* {cms_module module='Uploads' mode='simpleurl' upload_id=$entry->extravalue} *}
+            </div>
+        {/if}
+        {if isset($entry->fields)}
+        {foreach from=$entry->fields item='field'}
+            <div class="NewsSummaryField">
+                {if $field->type == 'file'}
+                {if isset($field->value) && $field->value}
+                    <img src="{$entry->file_location}/{$field->value}"/>
+                {/if}
+                {else}
+                {$field->name}:&nbsp;{$field->value}
+                {/if}
+            </div>
+        {/foreach}
+        {/if} //use only if required-->
+
+    </div>
+{/foreach}
+
+
+<!-- begin pagination -->
+{if $pagecount > 1}
+  <p>
+{if $pagenumber > 1}
+{$firstpage}&nbsp;{$prevpage}&nbsp;
+{/if}
+{$pagetext}&nbsp;{$pagenumber}&nbsp;{$oftext}&nbsp;{$pagecount}
+{if $pagenumber < $pagecount}
+&nbsp;{$nextpage}&nbsp;{$lastpage}
+{/if}
+</p>
+{/if}
+<!-- end pagination -->

@@ -1,0 +1,103 @@
+{strip}
+	{process_pagedata}
+{/strip}<!doctype html>
+<html lang="{cms_get_language}">
+
+<head>
+       {metadata}
+       <title>{title} - {sitename}</title>
+       {cms_stylesheet}
+</head>
+
+<body>
+	<div class="site-wraper">
+            <div id="navigation">
+                <nav class="navbar navbar-fixed-top navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" 
+                            data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">Brand</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                            <!--ul class="navbar navbar-nav navbar-right">
+                                <li><a href="#home">HOME</a></li>
+                                <li><a href="#about">ABOUT US</a></li>
+                                <li><a href="#gallery">GALLERY</a></li>
+                                <li><a href="#blog">BLOG</a></li>
+                                <li><a href="#contact">CONTACT US</a></li>
+                            </ul-->
+                                {Navigator}
+                        </div>
+                    </div>    
+                </nav>    
+            </div> 
+            {content}
+           
+            <div id="contact"> <!-- Begin Contact -->
+                <h1>Contact Us</h1>
+                <div class="contact">
+                  <div id="place-number-email">
+                    <div id="location" class="contact-item">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    <div class="details">1234,XYZ STREET,DOLO</div>
+                    </div>
+                    <div id="email" class="contact-item">
+                      <span class="glyphicon glyphicon-envelope"></span>
+                      <div class="details">abc@def.com</div>
+                    </div>
+                    <div id="phone" class="contact-item">
+                      <span class="glyphicon glyphicon-earphone"></span>
+                      <div class="details">+91-9099878650</div>
+                    </div>
+                  </div>
+                  <div id="communication">
+                    <div id="title" style="text-align:center; margin:5px; font-size:x-large;">Leave a message</div>
+                    <div id="communication-form">
+                        <form>
+                          <div class="form-group">
+                            <input class="form-control" type="text" name="name" id="name" placeholder="Full Name" required>
+                          </div>
+                          <div class="form-group">
+                            <input class="form-control" type="email" name="email" id="email" palceholder="Email" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" cols="20"></textarea>
+                          </div>
+                            <input type="submit" class="btn btn-large btn-msg" id="submit" name="submit" value="Submit" style="width:70px;">
+                        </form>
+                    </div><!-- end communication-form -->
+                  </div><!-- end communication -->
+                  <div id="social">
+                    <div id="social-title" style="text-align:center; margin:5px; font-size:x-large;">Follow Us!!!</div>
+                    <div>
+                      <div id="facebook" class="social">
+                        <img src="static/img/logo/w/facebook.png" alt="facebook">
+                      </div>
+                      <div id="twitter" class="social">
+                        <img src="static/img/logo/w/twitter.png" alt="twitter">
+                      </div>
+                      <div id="pinterest" class="social">
+                        <img src="static/img/logo/w/pinterest.png" alt="pinterest">
+                      </div>
+                      <div id="instagram" class="social">
+                        <img src="static/img/logo/w/instagram.png" alt="instagram">
+                      </div>
+                    </div>                       
+                  </div>
+                </div>
+            </div>   <!-- end contact -->
+            
+            
+
+        </div>
+{cms_jquery append="static/js/bootstrap.min.js,static/fotorama/fotorama.js,static/js/custom/aroha.js"}
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+{* simple navigation *}
+{* note, function can only be defined once *}
+{* 
+  variables:
+  node: contains the current node.
+  aclass: is used to build a string containing class names given to the a tag if one is used
+  liclass: is used to build a string containing class names given to the li tag.
+*}
+
+{function name=Nav_menu depth=1}{strip}
+<ul class="navbar navbar-nav navbar-right">
+  {foreach $data as $node}
+    {if $node->current}
+      {* this is the current page *}
+      {assign var='liclass' value=' active'}
+      {assign var='aclass' value=' active'}
+      <li class="{$liclass}">
+        <a class="{$aclass}" href="{$node->url}"{if $node->target ne ""} target="{$node->target}"{/if}>{$node->menutext}</a>
+      </li>
+    {else}
+      {* regular item *}
+      <li>
+        <a href="{$node->url}"{if $node->target ne ""} target="{$node->target}"{/if}>{$node->menutext}</a>
+      </li>
+    {/if}
+  {/foreach}
+</ul>
+{/strip}{/function}
+
+{if isset($nodes)}
+{Nav_menu data=$nodes depth=0}
+{/if}
