@@ -7,6 +7,9 @@
     $lang['email'] = "Email";
     $lang['phone'] = "Phone";
     $lang['message'] = "Message";
+    $lang['submit'] = "Submit button";
     $lang['empty_message'] = "No contacts to display yet";
+    $lang['id'] = "Id";
+    $lang['contact_date'] = "Date of visit";
 
 ?>
