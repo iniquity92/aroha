@@ -3,7 +3,7 @@
         const MAIL_TO = "sonu.abhisheksingh143@gmail.com";
         const MAIL_SUBJECT = "Request of information";
         private $_data = array(
-            'id'=>0,
+            'id'=>null,
             'name'=>'',
             'email'=>'',
             'phone'=>'',
@@ -37,8 +37,8 @@
         }
 
         public function is_valid(){
-            $name_pattern = "/^[a-zA-Z\u0020]+$/i";
-            $email_pattern = "/^[a-zA-Z0-9\u002e\u002d]+\u0040[a-z]+\.[com]|[in]|[co.in]$/i";
+            $name_pattern = "/^[a-zA-Z\x{0020}]+$/iu";
+            $email_pattern = "/^[a-zA-Z0-9\x{002e}\x{002d}]+\x{0040}[a-z]+\.[com]|[in]|[co.in]$/iu";
             $phone_pattern = "/^\d{10}$/";
             if(!preg_match($name_pattern,$this->name)) return FALSE;
             if(!preg_match($email_pattern,$this->email)) return FALSE;
@@ -48,19 +48,19 @@
 
         public function save(){
             if(!$this->is_valid()) return FALSE;
-            if($this->id==0){
+            if($this->_data['id']==null){
                 $this->insert();
             }
         }
 
         protected function insert(){
             $db = \cms_utils::get_db();
-            $sql = 'INSERT INTO '.CMS_DB_PREFIX.'mod_contact (name,email,phone,mesage,contact_date) VALUES(?,?,?,?,?)';
-            $dbr = $db->Execute($sql,array($this->name,$this->email,$this->phone,$this->message,$this->contact_date));
+            $sql = 'INSERT INTO '.CMS_DB_PREFIX.'mod_contact (name,email,phone,message,contact_date) VALUES(?,?,?,?,?)';
+            $dbr = $db->Execute($sql,array($this->name,$this->email,$this->phone,$this->message,$this->_data['contact_date']));
             if(!$dbr) return FALSE;
             $this->_data['id'] = $db->Insert_id();
 
-            mail(MAIL_TO,MAIL_SUBJECT,$this->message);
+           /* mail(self::MAIL_TO,self::MAIL_SUBJECT,$this->message);*/
             
             return TRUE;
         }
