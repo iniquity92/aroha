@@ -1,0 +1,190 @@
+{
+    "day-1":{
+        "id":"Day 1",
+        "location":"Christchurch",
+        "description":"Begin your journey like a classical romance as you punt along the tranquil waters of the historic Avon waters, expertly guided by an Edwardian guide. Take a tour of the quaint town of ChristChurch on its heritage tram circuit next. Relax and rejuvenate at the end of the first day as you get ready for an  exciting Day 2.",
+        "pics":[
+            {"url":"uploads/aroha/img/fp/d1-1.jpg","name":"Image 1"},
+            {"url":"uploads/aroha/img/fp/d1-2.jpg","name":"Image 2"},
+            {"url":"uploads/aroha/img/fp/d1-3.jpg","name":"Image 3"},
+            {"url":"uploads/aroha/img/fp/d1-4.jpg","name":"Image 4"}
+        ]
+    },
+    "day-2":{
+        "id":"Day 2",
+        "location":"Franz Joseph",
+        "description":"The Tranz Alpine train will take you on an unforgettable journey from ChristChurch to Greymouth, winding through lush farmlands, deep gorges, the spectacular Southern Alps and a verdant virgin beech forest. Next, hop over to the town of Hokitika, to revel in the mesmerizing history and carvings of the Pounamu stone, also called as the New Zealand jade. \r\n Ride along your adrenaline rush with the adventure quad bike ride as you race along dirt roads with your special one on an off road adventure. When on the West coast, don’t miss the opportunity to get up close and personal with ice at the breathtakingly beautiful Franz Joseph Glacier.",
+        "pics":[
+            {"url":"uploads/aroha/img/fp/d1-1.jpg","name":"Image 1"},
+            {"url":"uploads/aroha/img/fp/d1-2.jpg","name":"Image 2"},
+            {"url":"uploads/aroha/img/fp/d1-3.jpg","name":"Image 3"},
+            {"url":"uploads/aroha/img/fp/d1-4.jpg","name":"Image 4"}
+        ]
+    },
+    "day-3":{
+        "id":"Day 3",
+        "location":"Wanaka",
+        "description":"Get to the Puzzling world of weirdness at Wanaka which has been baffling visitors for over 40 years with its crazy puzzles, illusions and much more. Take a personalized helicopter tour next and get a panaromic view of all the beautiful landscape you have been travelling. \r\n Learn to ski at the ski village like a pro and also avail of other exciting skiing related activities.",
+        "pics":[
+            {"url":"uploads/aroha/img/fp/d1-1.jpg","name":"Image 1"},
+            {"url":"uploads/aroha/img/fp/d1-2.jpg","name":"Image 2"},
+            {"url":"uploads/aroha/img/fp/d1-3.jpg","name":"Image 3"},
+            {"url":"uploads/aroha/img/fp/d1-4.jpg","name":"Image 4"}
+        ]
+    },
+    "day-4":{
+        "id":"Day 4",
+        "location":"Queenstown",
+        "description":"Explore the historic town of Arrowtown with its restored settlements of gold miners from the late 1800’s. Hold on tight for a dramatic ride through narrow gorges and 360 ° spins in the Shotover river with a one of a kind Jet ride. Sit and relax with your partner as you travel up to Bob’s peak in a romantic Gondola ride. Wrap up your evening with a delicious dinner spread with all of Queenstown’s beautiful landscape spread out before you.",
+        "pics":[
+            {"url":"uploads/aroha/img/fp/d1-1.jpg","name":"Image 1"},
+            {"url":"uploads/aroha/img/fp/d1-2.jpg","name":"Image 2"},
+            {"url":"uploads/aroha/img/fp/d1-3.jpg","name":"Image 3"},
+            {"url":"uploads/aroha/img/fp/d1-4.jpg","name":"Image 4"}
+        ]
+    },
+    "day-5":{
+        "id":"Day 5",
+        "location":"Queenstown",
+        "description":"Jump face-straight into adventure as you bungee jump off the Kawarau Gorge Suspension Bridge at Queenstown. Rest your thrill genes for a leisurely day as you accompany your special person around Queenstown which is the perfect blend of modern day marvels with a touch of history.",
+        "pics":[
+            {"url":"uploads/aroha/img/fp/d1-1.jpg","name":"Image 1"},
+            {"url":"uploads/aroha/img/fp/d1-2.jpg","name":"Image 2"},
+            {"url":"uploads/aroha/img/fp/d1-3.jpg","name":"Image 3"},
+            {"url":"uploads/aroha/img/fp/d1-4.jpg","name":"Image 4"}
+        ]
+    },
+    "day-6":{
+        "id":"Day 6",
+        "location":"Milford Sound",
+        "description":"If you thought that magic was just an old wives’ tale, you’ll think again. Delve into the mystical wilderness while on the Milford Sound cruise which has inspired the shooting of epics such as the Lord of the Rings and Game of Thrones.",
+        "pics":[
+            {"url":"uploads/aroha/img/fp/d1-1.jpg","name":"Image 1"},
+            {"url":"uploads/aroha/img/fp/d1-2.jpg","name":"Image 2"},
+            {"url":"uploads/aroha/img/fp/d1-3.jpg","name":"Image 3"},
+            {"url":"uploads/aroha/img/fp/d1-4.jpg","name":"Image 4"}
+        ]
+    },
+    "day-7":{
+        "id":"Day 7",
+        "location":"Mt Cook",
+        "description":"A comfortable base for alpine activities, Mount Cook National Park is home to 23 peaks over 3000 metres high, including Sir Edmund Hillary’s Mt. Cook. Indulge in a day surrounded by sky touching peaks, glaciers and permanent snow fields. The unpolluted dark night serves as the perfect canvas for a star studded night. Enjoy Big star gazing under the guidance of a well-informed tour guide.",
+        "pics":[
+            {"url":"uploads/aroha/img/fp/d1-1.jpg","name":"Image 1"},
+            {"url":"uploads/aroha/img/fp/d1-2.jpg","name":"Image 2"},
+            {"url":"uploads/aroha/img/fp/d1-3.jpg","name":"Image 3"},
+            {"url":"uploads/aroha/img/fp/d1-4.jpg","name":"Image 4"}
+        ]
+    },
+    "day-8":{
+        "id":"Day 8",
+        "location":"Lake Tekapo",
+        "description":"Lying in the heart of the Mackenzie country, Lake Tekapo serves as the perfect accompaniment to stunning peaks and a jaw dropping scenery. Let this be the perfect backdrop to your first romantic getaway. \r\n Without leaving the comfort of Christchurch, experience the magic of Antarctica at the International Antarctica Centre. Have an unparalleled experience of the much fabled region along with hours and hours of fun.",
+        "pics":[
+            {"url":"uploads/aroha/img/fp/d1-1.jpg","name":"Image 1"},
+            {"url":"uploads/aroha/img/fp/d1-2.jpg","name":"Image 2"},
+            {"url":"uploads/aroha/img/fp/d1-3.jpg","name":"Image 3"},
+            {"url":"uploads/aroha/img/fp/d1-4.jpg","name":"Image 4"}
+        ]
+    },
+    "day-9":{
+        "id":"Day 9",
+        "location":"Auckland",
+        "description":"Gear up for a one of a kind experience at Kaikoura’s whale watching expedition. With sperm whales being all round residents of this spectacular region, witness schools of these majestic creatures in their natural most habitat.",
+        "pics":[
+            {"url":"uploads/aroha/img/fp/d1-1.jpg","name":"Image 1"},
+            {"url":"uploads/aroha/img/fp/d1-2.jpg","name":"Image 2"},
+            {"url":"uploads/aroha/img/fp/d1-3.jpg","name":"Image 3"},
+            {"url":"uploads/aroha/img/fp/d1-4.jpg","name":"Image 4"}
+        ]
+    },
+    "day-10":{
+        "id":"Day 10",
+        "location":"Auckland",
+        "description":"At the Bay of Islands, Auckland, visit the pivot of Political history at Waitangi where amongst many other important happenings, the Declaration of Independence of New Zealand was signed. Set out at Cape Brett, the Hole in the Rock Cruise is a beautiful passage through striking waters surrounded by interesting Maori traditions and tales of famous sailors like Captain Cook.",
+        "pics":[
+            {"url":"uploads/aroha/img/fp/d1-1.jpg","name":"Image 1"},
+            {"url":"uploads/aroha/img/fp/d1-2.jpg","name":"Image 2"},
+            {"url":"uploads/aroha/img/fp/d1-3.jpg","name":"Image 3"},
+            {"url":"uploads/aroha/img/fp/d1-4.jpg","name":"Image 4"}
+        ]
+    },
+    "day-11":{
+        "id":"Day 11",
+        "location":"Cape Regina",
+        "description":"Perhaps the spectacular swirl of curents at the Cape of Reigna, where the Tasman Sea meets the Pacific Ocean inspired the Maori belief that the spirits began their final journey from here. Discover the beauty of wild untouched nature at the 90 mile beach trail that leads to Cape Reigna. Once you are done taking in the breathtakingly beautiful sight, gear up for some jam packed sand boarding that will leave you wanting more. Hike through lost trails at the Puketi Kauri forest with its ancient trees and ecosystem, steeped in legend and beautiful flora and fauna as you end yet another amazing day.",
+        "pics":[
+            {"url":"uploads/aroha/img/fp/d1-1.jpg","name":"Image 1"},
+            {"url":"uploads/aroha/img/fp/d1-2.jpg","name":"Image 2"},
+            {"url":"uploads/aroha/img/fp/d1-3.jpg","name":"Image 3"},
+            {"url":"uploads/aroha/img/fp/d1-4.jpg","name":"Image 4"}
+        ]
+    },
+    "day-12":{
+        "id":"Day 12",
+        "location":"Paihia",
+        "description":"Paihia is the perfect spot to stay if you wish to discover the secret coves and beaches along the Bay of Islands. The overnight cruise that explores the marvellous Hauraki Gulf, lets you unearth secluded beaches, paddle about in a kayak or snorkel in the clear waters of the Pacific. Relax on deck and drink in the views, and follow it all with fresh and fabulous cuisine matched with New Zealand’s finest beer and wine.",
+        "pics":[
+            {"url":"uploads/aroha/img/fp/d1-1.jpg","name":"Image 1"},
+            {"url":"uploads/aroha/img/fp/d1-2.jpg","name":"Image 2"},
+            {"url":"uploads/aroha/img/fp/d1-3.jpg","name":"Image 3"},
+            {"url":"uploads/aroha/img/fp/d1-4.jpg","name":"Image 4"}
+        ]
+    },
+    "day-13":{
+        "id":"Day 13",
+        "location":"Coromandel",
+        "description":"The Karangahake Gorge Historic Walkway gives access to impressive remains from the mining and railway eras as it follows the ancient railway line. Perfect for a swim and a picnic, the Cathedral Cove Beach at the Coromandel. The name is derived from a gigantic arched cavern that passes through a white rock headland to join two secluded coves. The relaxed beach town of Mt. Maunganui is a holiday paradise where you can surf, swim, golf, dine or just lay back and soak in the toasty sea side sun.",
+        "pics":[
+            {"url":"uploads/aroha/img/fp/d1-1.jpg","name":"Image 1"},
+            {"url":"uploads/aroha/img/fp/d1-2.jpg","name":"Image 2"},
+            {"url":"uploads/aroha/img/fp/d1-3.jpg","name":"Image 3"},
+            {"url":"uploads/aroha/img/fp/d1-4.jpg","name":"Image 4"}
+        ]
+    },
+    "day-14":{
+        "id":"Day 14",
+        "location":"Hobbiton",
+        "description":"Begin this day of fantastical tour with the sunrise at Mt. Maunganui. The Hobbiton village tour at Rotorua is a classic experience that brings to life some of our most favourite scenes from The Hobbit and The Lord of the Rings. Have a look see into the unique New Zealand farm  experience complete with a real working farm and live animals. Move on to the Agroventures Adventure Park which offers exclusive New Zealand adventures like a human powered monorail racetrack, Rotorua Bungy and Agrojet. The OGO Rotura is owned and operated by the inventors of the Ball rolling themselves. Fling yourself down a magnificent hill with your partner in a crazy fun experience. \r\n End the day with a Maori village visit which will take you back to days of proud warriors and rich rituals. From powerful performances to traditional feating, a journey to New Zealand is incomplete without a visit to the Maori village.",
+        "pics":[
+            {"url":"uploads/aroha/img/fp/d1-1.jpg","name":"Image 1"},
+            {"url":"uploads/aroha/img/fp/d1-2.jpg","name":"Image 2"},
+            {"url":"uploads/aroha/img/fp/d1-3.jpg","name":"Image 3"},
+            {"url":"uploads/aroha/img/fp/d1-4.jpg","name":"Image 4"}
+        ]
+    },
+    "day-15":{
+        "id":"Day 15",
+        "location":"Rotorua",
+        "description":"The Te Puia is New Zealand’s living, loving Maori cultural centre. The world-famous Pohutu Geyser, and more than 500 natural geothermal wonders awaits you. White water river rafting is up next for the thrill seekers who would love to battle it out with the forces of nature. You can partake once more of the skyline Gondola ride where you get to witness the beauty of Rotorua aerially. Spend a deliciously romantic evening, pampering yourselves at a private hotwater pool spa.",
+        "pics":[
+            {"url":"uploads/aroha/img/fp/d1-1.jpg","name":"Image 1"},
+            {"url":"uploads/aroha/img/fp/d1-2.jpg","name":"Image 2"},
+            {"url":"uploads/aroha/img/fp/d1-3.jpg","name":"Image 3"},
+            {"url":"uploads/aroha/img/fp/d1-4.jpg","name":"Image 4"}
+        ]
+    },
+    "day-16":{
+        "id":"Day 16",
+        "location":"Waitomo Caves",
+        "description":"Don’t miss out on the absolutely fantastic luminescent performance by glow-worms at Waimoto. If you just can’t have enough of these caves, proceed to blackwater rafting which will take you on an unforgettable caving tour. \r\n If you have always dreamt of your handsome young knight whiffing you off for a romantic dinner on a limousine, tonight is the night. Enjoy a classic limousine ride which ends at the sky tower. The sky tower dinner is a personalized intimate affair that will definitely make up some of the most wonderful memories of this trip.",
+        "pics":[
+            {"url":"uploads/aroha/img/fp/d1-1.jpg","name":"Image 1"},
+            {"url":"uploads/aroha/img/fp/d1-2.jpg","name":"Image 2"},
+            {"url":"uploads/aroha/img/fp/d1-3.jpg","name":"Image 3"},
+            {"url":"uploads/aroha/img/fp/d1-4.jpg","name":"Image 4"}
+        ]
+    },
+    "day-17":{
+        "id":"Day 17",
+        "location":"Auckland",
+        "description":"The beginning of the end is with a mystery activity where the winner avails of huge, exciting benefits. With your afternoon free, explore the bustling town of Auckland with your loved one, picking up souvenirs and making memories on the way. Later that evening, catch a flight  back home to begin the next chapter of your happily ever after.",
+        "pics":[
+            {"url":"uploads/aroha/img/fp/d1-1.jpg","name":"Image 1"},
+            {"url":"uploads/aroha/img/fp/d1-2.jpg","name":"Image 2"},
+            {"url":"uploads/aroha/img/fp/d1-3.jpg","name":"Image 3"},
+            {"url":"uploads/aroha/img/fp/d1-4.jpg","name":"Image 4"}
+        ]
+    }
+
+}
